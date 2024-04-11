@@ -34,6 +34,7 @@ import User from '../models/user.model.js';
           errorHandler(400, 'Username can only contain letters and numbers')
         );
       }
+    }
       try {
         const updatedUser = await User.findByIdAndUpdate(
           req.params.userId,
@@ -52,5 +53,4 @@ import User from '../models/user.model.js';
       } catch (error) {
         next(error);
       }
-    }
   };
