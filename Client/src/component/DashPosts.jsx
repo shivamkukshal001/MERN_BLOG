@@ -131,6 +131,7 @@ const DashPosts = () => {
               </Table.Body>
             ))}
           </Table>
+          
           {showMore && (
             <button
               onClick={handleShowMore}
